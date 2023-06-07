@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './styles.module.scss';
-import {OpenedPopup} from "../index";
+import {Context} from "../index";
 import DateInterval from "../DateInterval";
 const Sort = (props) => {
-	const {opened, setOpened} = React.useContext(OpenedPopup);
+	const {opened, setOpened} = React.useContext(Context);
 	const [open, setOpen] = React.useState(false)
 	const [dateInterval, setDateInterval] = React.useState(false)
 	const [active, setActive] = React.useState("")
 	const [mass, setMass] = React.useState([])
-	const { date} = React.useContext(OpenedPopup)
+	const { date} = React.useContext(Context)
 	function onClickItem (itemTitle, dateBool) {
 		if(!dateBool){
 			setActive(itemTitle);

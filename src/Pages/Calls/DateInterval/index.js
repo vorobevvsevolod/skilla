@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styles from './styles.module.scss'
-import {OpenedPopup} from "../index";
+import {Context} from "../index";
 function DateInterval() {
-	const {setDate, date} = React.useContext(OpenedPopup)
+	const {setDate, date} = React.useContext(Context)
 	const [startDate, setStartDate] = useState('');
 	const [endDate, setEndDate] = useState('');
 	

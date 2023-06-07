@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 import Sort from "./Sort";
 import DateInterval from "./DateInterval";
 
-export const OpenedPopup = React.createContext(null);
+export const Context = React.createContext(null);
 const Calls = () => {
 	const [opened, setOpened] = React.useState("");
 	const [in_out, setIn_out] = React.useState(null);
@@ -87,7 +87,7 @@ const Calls = () => {
 	}, [date.start, date.end, in_out])
 	return (
 		<div className={styles.calls}>
-			<OpenedPopup.Provider value={{opened, setOpened, setDate, date}}>
+			<Context.Provider value={{opened, setOpened, setDate, date}}>
 			<div className={styles.container}>
 				<div className={styles.sortPanel}>
 					<div className={styles.sortPanel_one}>
@@ -185,7 +185,7 @@ const Calls = () => {
 					</table>
 					
 			</div>
-			</OpenedPopup.Provider>
+			</Context.Provider>
 		</div>
 	);
 };
