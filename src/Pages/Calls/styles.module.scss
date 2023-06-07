@@ -1,0 +1,226 @@
+.calls{
+  background-color: #f2f5fa;
+  padding-bottom: 20px;
+}
+
+.container{
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.sortPanel{
+
+  &_one{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+
+    &_balance{
+      width: 145px;
+      height: 40px;
+      background: #FFFFFF;
+      border-radius: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      margin-right: 48px;
+      span{
+        font-size: 14px;
+        color: #899CB1;
+        font-weight: 400;
+      }
+      b{
+        color: black;
+      }
+    }
+
+    &_DateStartEnd{
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 115px;
+      height: 24px;
+      justify-content: space-between;
+      cursor: pointer;
+
+    }
+  }
+
+  &_two{
+    padding: 13px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    &_searchField{
+      align-items: center;
+      display: flex;
+      &_img{
+        margin-right: 12px;
+
+      }
+      .input{
+        color: #5E7793;
+      }
+    }
+
+    &_sortBy{
+      display: flex;
+      align-items: center;
+    }
+
+  }
+}
+
+.tableCalls{
+  width: 100%;
+
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 5px #E9EDF3;
+  border-radius: 8px;
+
+  border-collapse: collapse;
+  &_header{
+    color: #899CB1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  &_row{
+
+    min-height: 73px;
+    max-height: 84px;
+    cursor: pointer;
+    &:hover{
+      background-color: rgba(212, 223, 243, 0.17);
+    }
+
+    &:hover{
+      background-color: rgba(212, 223, 243, 0.17);
+      .radio{
+        opacity: 1;
+      }
+      .time{
+        display: none;
+      }
+
+      .audio{
+
+        &_player{
+          &_container{
+            display: block;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .radio{
+      text-align: center;
+      opacity: 0;
+      width: 16px;
+      height: 16px;
+      border: none;
+      input{
+        color: #375EA4;
+      }
+    }
+
+    .time{
+      display: block;
+    }
+
+    .audio{
+      text-align: right;
+      padding-right: 40px;
+
+      &_player{
+        &_container{
+          display: none;
+        }
+
+        width: 340px;
+        height: 48px;
+        background: #EAF0FA;
+        border-radius: 48px;
+        display: flex;
+        padding: 10px 20px;
+        align-items: center;
+
+        &_time{
+          font-weight: 400;
+          font-size: 15px;
+          color: #122945;
+          margin-right: 12px;
+        }
+
+        &_play{
+          margin-right: 8px;
+        }
+
+        &_line{
+          width: 164px;
+          height: 4px;
+          background: #ADBFDF;
+          border-radius: 50px;
+          margin-right: 12px;
+        }
+
+        &_download{
+          margin-right: 23px;
+          &:hover{
+            path{
+              fill: #002CFB;
+            }
+          }
+        }
+
+        &_delete{
+          opacity: 0;
+
+          &:hover{
+            opacity: 1;
+
+          }
+        }
+
+
+
+      }
+    }
+  }
+
+  &_colHead{
+    padding: 20px 10px;
+    text-align: left;
+  }
+
+  &_col{
+    border-top: 1px solid #EAF0FA;
+    padding: 10px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 15px;
+    color: #122945;
+    height: 70px;
+
+    &_source{
+      color: #5E7793;
+      font-weight: 400;
+      font-size: 15px;
+    }
+
+
+
+
+    &_nameCompany{
+      margin-top: 4px;
+      color: #5E7793;
+    }
+  }
+}

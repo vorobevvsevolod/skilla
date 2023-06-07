@@ -1,0 +1,82 @@
+.header{
+  height: 64px;
+  display: flex;
+  align-items: center;
+  color: #899CB1;
+  box-shadow: 0px 4px 5px #E9EDF3;
+
+  &_container{
+
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  &_left{
+    display: flex;
+    align-items: center;
+    &_date{
+      margin-right: 86px;
+    }
+
+    &_callAnalytics{
+      display: flex;
+      height: 34px;
+
+      &_item{
+        margin-right: 56px;
+        text-align: left;
+        &_title{
+          font-weight: 400;
+          font-size: 14px;
+          margin-bottom: 10px;
+          color: black;
+        }
+
+        &_bar{
+          height: 6px;
+          width: 156px;
+          background: #DEE6F5;
+          border-radius: 12px;
+          &_value{
+            height: 6px;
+            width: 68px;
+            border-radius: 12px;
+          }
+        }
+      }
+    }
+
+  }
+
+  &_right{
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+      &_search{
+        margin-right: 64px;
+      }
+
+      &_nameCompany{
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+      }
+
+    &_avatar{
+      display: flex;
+      align-items: center;
+      .img{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &_arrowDown{
+      margin-left: 2px;
+    }
+  }
+}
+

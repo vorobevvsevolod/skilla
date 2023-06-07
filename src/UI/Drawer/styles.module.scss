@@ -1,0 +1,65 @@
+.drawer{
+  display: block;
+  background-color: #091336;
+  width: 240px;
+  color: white;
+  &_logo{
+    margin: 20px 0 32px 12px;
+  }
+}
+
+.nav{
+  text-align: center;
+  margin-bottom: 56px;
+  &_link{
+    padding: 15px;
+    align-items: center;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+
+    img{
+      position: absolute;
+    }
+
+    span{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      opacity: 0.6;
+      margin-left: 36px;
+
+    }
+
+    &:hover{
+      background-color: rgba(216, 228, 251, 0.32);
+      transition: all 0.2s ease-in-out;
+    }
+
+    &_active{
+      background-color: rgba(216, 228, 251, 0.32);
+      &:after{
+        display: block;
+        position: absolute;
+        left: 0;
+        content: '';
+        height: 100%;
+        background-color: #002CFB;
+        width: 3px;
+      }
+
+      &:before{
+        display: block;
+        position: absolute;
+        content: '';
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        background-color: #FFD500;
+        box-shadow: 0px 3px 8px rgba(237, 218, 1, 0.5);
+        right: 12px;
+      }
+    }
+  }
+}
+

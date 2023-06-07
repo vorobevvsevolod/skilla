@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+}
+
+
+
+.main{
+  width: 100%;
+
+  &_container{
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+}
